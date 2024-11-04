@@ -18,12 +18,12 @@ if (process.env.NODE_ENV === 'development') {
       createdAt: 'created_at',
       updatedAt: 'updated_at',
     },
-    dialectOptions: {
+    /*dialectOptions: {
       ssl: {
         require: true,
         rejectUnauthorized: false,
       },
-    },
+    },*/
   });
 } else {
   throw new Error(

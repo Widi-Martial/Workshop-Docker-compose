@@ -21,7 +21,10 @@ export default function MobileNavBar() {
     },
   ];
   return (
-    <div className="bg-white shadow-mobileNav w-full px-3 pt-2 flex justify-around items-center text-primaryText fixed bottom-0 z-10 md:hidden">
+    <div
+      className="bg-white shadow-mobileNav w-full px-3 pt-2 flex 
+    justify-around items-center text-primaryText fixed bottom-0 z-10 md:hidden"
+    >
       {menuItems.map((item) => (
         <a href={item.href} key={item.text}>
           <img

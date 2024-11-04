@@ -62,14 +62,19 @@ function EditProfileComponent() {
                   Prénom
                 </label>
                 <div className="mt-2">
-                  <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600">
+                  <div
+                    className="flex rounded-md shadow-sm ring-1 ring-inset 
+                  ring-gray-300 focus-within:ring-2 focus-within:ring-inset 
+                  focus-within:ring-indigo-600"
+                  >
                     <input
                       id="firstName"
                       name="firstName"
                       type="text"
                       placeholder="Jean"
                       autoComplete="firstName"
-                      className="block w-full border-0 bg-transparent py-1.5 pl-1 text-primaryText placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+                      className="block w-full border-0 bg-transparent py-1.5 pl-1 
+                      text-primaryText placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
                     />
                   </div>
                 </div>
@@ -87,7 +92,9 @@ function EditProfileComponent() {
                     id="birthDate"
                     name="birthDate"
                     type="date"
-                    className="block w-full rounded-md border-0 py-1.5 text-primaryText shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md border-0 py-1.5 
+                    text-primaryText shadow-sm ring-1 ring-inset ring-gray-300 
+                    focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
@@ -104,7 +111,10 @@ function EditProfileComponent() {
                       value={description}
                       onChange={(e) => setDescription(e.target.value)}
                       placeholder="Entrez votre description ici..."
-                      className="block w-full rounded-md border-0 py-1.5 text-primaryText shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                      className="block w-full rounded-md border-0 py-1.5
+                      text-primaryText shadow-sm ring-1 ring-inset ring-gray-300 
+                      focus:ring-2 focus:ring-inset focus:ring-indigo-600 
+                      sm:text-sm sm:leading-6"
                       rows={4}
                     />
                   </div>
@@ -124,7 +134,8 @@ function EditProfileComponent() {
                           type="checkbox"
                           checked={hobbies[hobby]}
                           onChange={() => handleHobbyChange(hobby)}
-                          className="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"
+                          className="h-4 w-4 text-indigo-600 focus:ring-indigo-500
+                          border-gray-300 rounded"
                         />
                         <label
                           htmlFor={`hobby-${index}`}

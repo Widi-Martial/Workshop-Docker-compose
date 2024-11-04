@@ -31,6 +31,7 @@ export default function EventSticker({ event, page }: EventStickerProps) {
             src={event.picture}
             alt={event.name}
             className={`object-cover rounded-xl ${page === 'profile' ? 'h-36 w-36' : 'h-72 w-72'}`}
+            loading="lazy"
           />
           <div
             className={`m-2 w-fit absolute bottom-0 left-1 text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] font-medium ${page === 'profile' ? 'text-md' : 'text-2xl'}`}

@@ -42,15 +42,16 @@ export default function MessagesField() {
       try {
         const result = await axios.get('/private/contacts');
         setMessagesData(result.data);
-        /* if (sendMessage.lastReceiverId) {
+        if (sendMessage.lastReceiverId) {
           setDisplayMessages(
             result.data.find(
               (data: IContacts) => data.id === sendMessage.lastReceiverId
             )
           );
-        } else {} */
-        // Put first entrie of result into the state to display message
-        setDisplayMessages(result.data[0]);
+        } else {
+          // Put first entrie of result into the state to display message
+          setDisplayMessages(result.data[0]);
+        }
       } catch (err) {
         console.error(err);
         // check if is Axios error and if the user is not blocked

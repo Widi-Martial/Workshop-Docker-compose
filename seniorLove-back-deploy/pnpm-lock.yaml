@@ -17,6 +17,9 @@ importers:
       cloudinary:
         specifier: ^2.4.0
         version: 2.4.0
+      connect-session-sequelize:
+        specifier: ^7.1.7
+        version: 7.1.7(sequelize@6.37.3(pg@8.12.0))
       cors:
         specifier: ^2.8.5
         version: 2.8.5
@@ -679,6 +682,12 @@ packages:
   concat-stream@1.6.2:
     resolution: {integrity: sha512-27HBghJxjiZtIk3Ycvn/4kbJk/1uZuJFfuPEns6LaEvpvG1f0hTea8lilrouyo9mVc2GWdcEZ8OLoGmSADlrCw==}
     engines: {'0': node >= 0.8}
+
+  connect-session-sequelize@7.1.7:
+    resolution: {integrity: sha512-Wqq7rg0w+9bOVs6jC0nhZnssXJ3+iKNlDVWn2JfBuBPoY7oYaxzxfBKeUYrX6dHt3OWEWbZV6LJvapwi76iBQQ==}
+    engines: {node: '>= 10'}
+    peerDependencies:
+      sequelize: '>= 6.1.0'
 
   content-disposition@0.5.4:
     resolution: {integrity: sha512-FveZTNuGw04cxlAiWbzi6zTAL/lhehaWbTtgluJh4/E95DqMwTmha3KZN1aAWA8cFIhHzMZUvLevkw5Rqk+tSQ==}
@@ -2915,6 +2924,13 @@ snapshots:
       inherits: 2.0.4
       readable-stream: 2.3.8
       typedarray: 0.0.6
+
+  connect-session-sequelize@7.1.7(sequelize@6.37.3(pg@8.12.0)):
+    dependencies:
+      debug: 4.3.6(supports-color@5.5.0)
+      sequelize: 6.37.3(pg@8.12.0)
+    transitivePeerDependencies:
+      - supports-color
 
   content-disposition@0.5.4:
     dependencies:

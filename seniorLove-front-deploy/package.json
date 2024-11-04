@@ -12,7 +12,6 @@
   "scripts": {
     "test": "jest",
     "dev": "vite",
-    "start":"vite build",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"

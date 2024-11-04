@@ -30,17 +30,13 @@ COPY . .
 RUN --mount=type=bind,source=package.json,target=package.json \
     --mount=type=bind,source=pnpm-lock.yaml,target=pnpm-lock.yaml \
     --mount=type=cache,target=/root/.local/share/pnpm/store \
-    pnpm install --frozen-lockfile
+    pnpm install -p --frozen-lockfile
 
-USER root
-RUN chown -R node:node /usr/src/app
-
-# Run the application as a non-root user.
 USER node
-
+# RUN chown -R node:node /usr/src/app
 
 # Expose the port that the application listens on.
 EXPOSE 4000
 
 # Run the application.
-CMD ["pnpm", "run", "dev"]
+CMD ["pnpm", "run", "start"]

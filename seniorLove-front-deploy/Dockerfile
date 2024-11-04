@@ -1,43 +1,34 @@
-# syntax=docker/dockerfile:1
-
 ARG NODE_VERSION=20.15.1
 ARG PNPM_VERSION=9.12.0
 
 # Use node image for base image for all stages.
-FROM node:${NODE_VERSION}-alpine AS base
-
-ENV NODE_ENV=development
+FROM node:${NODE_VERSION}-alpine as base
 
 # Set working directory for all build stages.
 WORKDIR /usr/src/app
 
-# Copy the rest of the source files into the image.
-COPY . .   
-# Install pnpm globally.
-RUN npm install -g pnpm@${PNPM_VERSION}
+# Install pnpm.
+RUN --mount=type=cache,target=/root/.npm \
+    npm install -g pnpm@${PNPM_VERSION}
 
-# Copy package.json and pnpm-lock.yaml (if exists).
-COPY package.json pnpm-lock.yaml* ./
+COPY . .
+COPY package.json pnpm-lock.yaml ./
 
-# Install production dependencies only.
-FROM base AS deps
-RUN pnpm install
+RUN pnpm install --frozen-lockfile
 
+FROM base AS build
+RUN pnpm build
 
-# Create a new stage to run the application.
-FROM base AS final
+FROM nginx:alpine
+COPY --from=build /usr/src/app/nginx/nginx.conf /etc/nginx/conf.d/default.conf
 
-# Copy the production dependencies from the deps stage and also the built application from the build stage into the image.
-COPY --from=deps /usr/src/app/node_modules ./node_modules
-# Uncomment the next line if you build assets
-# COPY --from=build /usr/src/app/dist ./dist
+WORKDIR /usr/share/nginx/html
 
-# Expose the port that the application listens on.
-EXPOSE 3000
+# Remove default nginx static assets
+RUN rm -rf ./*
 
-USER root
-RUN chown -R node:node /usr/src/app
+COPY --from=build /usr/src/app/dist /usr/share/nginx/html
 
-USER node
-# Run the application.
-CMD ["pnpm", "run", "dev"]
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]

@@ -10,6 +10,8 @@ import { checkToken } from './src/middlewares/checkToken.js';
 import cors from 'cors';
 import { adminRouter } from './src/routers/adminRouter.js';
 import session from 'express-session';
+import { sequelize } from './src/models/sequelize_client.js';
+import sequelizeStore from 'connect-session-sequelize'
 
 // Convert import.meta.url to __filename and __dirname
 const __filename = fileURLToPath(import.meta.url);
@@ -21,17 +23,26 @@ app.use(cors({ origin: process.env.ALLOWED_DOMAINS }));
 app.use(express.urlencoded({ extended: true })); // Parser les bodies de type "application/www-form-urlencoded"
 app.use(express.json()); // Parser les bodies de type "application/json"
 
+// save session in store connect
+const SequelizeStore = sequelizeStore(session.Store)
+const myStore = new SequelizeStore({
+  db: sequelize
+})
 app.use(
   session({
     resave: false,
     saveUninitialized: false,
     secret: 'Guess it!',
+    store: myStore,
     cookie: {
       secure: false,
       maxAge: 1000 * 60 * 60, // ça fait une heure
     },
   })
 );
+
+//sync database
+myStore.sync()
 
 app.use(bodySanitizerMiddleware);
 

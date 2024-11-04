@@ -19,7 +19,7 @@ export default function ContactsListField({
 }: ContactInterface) {
   const [isSelected, setIsSelected] = useState<boolean[]>([]);
 
-  // selectionné par defalut le premier contact
+  // selectionne par defaut le premier contact
   function handleSelected(index: number) {
     const newSelected = new Array(isSelected.length).fill(false);
     newSelected[index] = true;
