@@ -40,6 +40,7 @@ export default function ConversationPreview({
   return (
     <button
       type="button"
+      aria-label="contact"
       className={`p-2 hover:shadow-around max-md:shadow-md ${
         isSelected ? 'md:shadow-pink' : ''
       } w-full rounded-3xl relative`}
