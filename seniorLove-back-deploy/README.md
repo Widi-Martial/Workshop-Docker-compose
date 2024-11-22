@@ -70,3 +70,12 @@ To run this project locally, follow these steps:
    ```sh
    pnpm dev
    ```
+
+## Test account
+1. **User 1**
+   - Mail : marie.jardin55@example.com
+   - Password : Marie1955!
+2. **User 2**
+   - Mail : alain.maths48@example.com
+   - Password : Alain1948@
+
