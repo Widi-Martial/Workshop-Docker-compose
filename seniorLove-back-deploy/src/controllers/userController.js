@@ -291,7 +291,7 @@ export async function updateUserProfile(req, res) {
   });
 }
 
-//Supprimer un utilisateur
+//Delete user
 export async function deleteUser(req, res) {
   const userIdToDelete = parseInt(req.user.userId, 10);
 
@@ -302,7 +302,7 @@ export async function deleteUser(req, res) {
   res.status(204).end();
 }
 
-//Récupérer tous les utilisateurs qui ont les mêmes centres d'intérets
+// Retrieve all users with similar interests
 export async function getAllSameInterestUsers(req, res) {
   // Get my id, and check if it's a number
   const myId = parseInt(req.user.userId);

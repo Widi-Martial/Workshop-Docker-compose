@@ -3,7 +3,7 @@ import Joi from 'joi';
 import { Op } from 'sequelize';
 import { isActiveUser } from '../utils/checkUserStatus.js';
 
-// Récupere tous les messages d'un utilisateur connecté
+// get all connected user message
 export async function getAllUserMessages(req, res) {
   // Get my id, and check if it's a number
   const myId = parseInt(req.user.userId, 10);

@@ -26,7 +26,13 @@ export default function NavBarLogged() {
             <NavLink
               to={button.to}
               key={button.text}
-              className=" text-secondaryPink hover:text-primaryText font-semibold py-2 px-3 nav-link hidden md:block"
+              className="text-secondaryPink hover:text-primaryText font-semibold py-2 px-3 hidden md:block rounded-full bg-[#ebebea]"
+              style={({ isActive }) => {
+                return {
+                  backgroundColor: isActive ? '#E86484' : '',
+                  color: isActive ? 'white' : '',
+                };
+              }}
             >
               {button.text}
             </NavLink>

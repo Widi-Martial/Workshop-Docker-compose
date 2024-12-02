@@ -11,7 +11,7 @@ import cors from 'cors';
 import { adminRouter } from './src/routers/adminRouter.js';
 import session from 'express-session';
 import { sequelize } from './src/models/sequelize_client.js';
-import sequelizeStore from 'connect-session-sequelize'
+import sequelizeStore from 'connect-session-sequelize';
 
 // Convert import.meta.url to __filename and __dirname
 const __filename = fileURLToPath(import.meta.url);
@@ -20,19 +20,21 @@ const __dirname = path.dirname(__filename);
 const app = express();
 app.use(cors({ origin: process.env.ALLOWED_DOMAINS }));
 
-app.use(express.urlencoded({ extended: true })); // Parser les bodies de type "application/www-form-urlencoded"
-app.use(express.json()); // Parser les bodies de type "application/json"
+// Parsing body types "application/www-form-urlencoded"
+app.use(express.urlencoded({ extended: true }));
+// Parsing body types "application/json"
+app.use(express.json());
 
 // save session in store connect
-const SequelizeStore = sequelizeStore(session.Store)
+const SequelizeStore = sequelizeStore(session.Store);
 const myStore = new SequelizeStore({
-  db: sequelize
-})
+  db: sequelize,
+});
 app.use(
   session({
     resave: false,
     saveUninitialized: false,
-    secret: 'Guess it!',
+    secret: process.env.SECRET_KEY,
     store: myStore,
     cookie: {
       secure: false,
@@ -42,8 +44,9 @@ app.use(
 );
 
 //sync database
-myStore.sync()
+myStore.sync();
 
+// clean code
 app.use(bodySanitizerMiddleware);
 
 app.disable('x-powered-by');

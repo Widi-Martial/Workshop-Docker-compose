@@ -55,7 +55,7 @@ const adminController = {
     }
 
     // Compare the passwords
-    const isGood = await Scrypt.compare(password, foundAdmin.password);
+    const isGood = Scrypt.compare(password, foundAdmin.password);
 
     if (!isGood) {
       return res.status(401).render('login', {

@@ -21,7 +21,7 @@ SET default_tablespace = '';
 SET default_table_access_method = heap;
 
 --
--- Name: administrators; Type: TABLE; Schema: public; Owner: senior
+-- Name: administrators; Type: TABLE; Schema: public; Owner: seniorlove
 --
 
 CREATE TABLE public.administrators (
@@ -34,10 +34,10 @@ CREATE TABLE public.administrators (
 );
 
 
-ALTER TABLE public.administrators OWNER TO senior;
+ALTER TABLE public.administrators OWNER TO seniorlove;
 
 --
--- Name: administrators_id_seq; Type: SEQUENCE; Schema: public; Owner: senior
+-- Name: administrators_id_seq; Type: SEQUENCE; Schema: public; Owner: seniorlove
 --
 
 ALTER TABLE public.administrators ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY (
@@ -51,7 +51,7 @@ ALTER TABLE public.administrators ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTI
 
 
 --
--- Name: events; Type: TABLE; Schema: public; Owner: senior
+-- Name: events; Type: TABLE; Schema: public; Owner: seniorlove
 --
 
 CREATE TABLE public.events (
@@ -69,10 +69,10 @@ CREATE TABLE public.events (
 );
 
 
-ALTER TABLE public.events OWNER TO senior;
+ALTER TABLE public.events OWNER TO seniorlove;
 
 --
--- Name: events_hobbies; Type: TABLE; Schema: public; Owner: senior
+-- Name: events_hobbies; Type: TABLE; Schema: public; Owner: seniorlove
 --
 
 CREATE TABLE public.events_hobbies (
@@ -84,10 +84,10 @@ CREATE TABLE public.events_hobbies (
 );
 
 
-ALTER TABLE public.events_hobbies OWNER TO senior;
+ALTER TABLE public.events_hobbies OWNER TO seniorlove;
 
 --
--- Name: events_hobbies_id_seq; Type: SEQUENCE; Schema: public; Owner: senior
+-- Name: events_hobbies_id_seq; Type: SEQUENCE; Schema: public; Owner: seniorlove
 --
 
 ALTER TABLE public.events_hobbies ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY (
@@ -101,7 +101,7 @@ ALTER TABLE public.events_hobbies ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTI
 
 
 --
--- Name: events_id_seq; Type: SEQUENCE; Schema: public; Owner: senior
+-- Name: events_id_seq; Type: SEQUENCE; Schema: public; Owner: seniorlove
 --
 
 ALTER TABLE public.events ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY (
@@ -115,7 +115,7 @@ ALTER TABLE public.events ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY (
 
 
 --
--- Name: hobbies; Type: TABLE; Schema: public; Owner: senior
+-- Name: hobbies; Type: TABLE; Schema: public; Owner: seniorlove
 --
 
 CREATE TABLE public.hobbies (
@@ -126,10 +126,10 @@ CREATE TABLE public.hobbies (
 );
 
 
-ALTER TABLE public.hobbies OWNER TO senior;
+ALTER TABLE public.hobbies OWNER TO seniorlove;
 
 --
--- Name: hobbies_id_seq; Type: SEQUENCE; Schema: public; Owner: senior
+-- Name: hobbies_id_seq; Type: SEQUENCE; Schema: public; Owner: seniorlove
 --
 
 ALTER TABLE public.hobbies ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY (
@@ -143,7 +143,7 @@ ALTER TABLE public.hobbies ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY (
 
 
 --
--- Name: users; Type: TABLE; Schema: public; Owner: senior
+-- Name: users; Type: TABLE; Schema: public; Owner: seniorlove
 --
 
 CREATE TABLE public.users (
@@ -165,10 +165,10 @@ CREATE TABLE public.users (
 );
 
 
-ALTER TABLE public.users OWNER TO senior;
+ALTER TABLE public.users OWNER TO seniorlove;
 
 --
--- Name: users_events; Type: TABLE; Schema: public; Owner: senior
+-- Name: users_events; Type: TABLE; Schema: public; Owner: seniorlove
 --
 
 CREATE TABLE public.users_events (
@@ -180,10 +180,10 @@ CREATE TABLE public.users_events (
 );
 
 
-ALTER TABLE public.users_events OWNER TO senior;
+ALTER TABLE public.users_events OWNER TO seniorlove;
 
 --
--- Name: users_events_id_seq; Type: SEQUENCE; Schema: public; Owner: senior
+-- Name: users_events_id_seq; Type: SEQUENCE; Schema: public; Owner: seniorlove
 --
 
 ALTER TABLE public.users_events ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY (
@@ -197,7 +197,7 @@ ALTER TABLE public.users_events ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY
 
 
 --
--- Name: users_hobbies; Type: TABLE; Schema: public; Owner: senior
+-- Name: users_hobbies; Type: TABLE; Schema: public; Owner: seniorlove
 --
 
 CREATE TABLE public.users_hobbies (
@@ -209,10 +209,10 @@ CREATE TABLE public.users_hobbies (
 );
 
 
-ALTER TABLE public.users_hobbies OWNER TO senior;
+ALTER TABLE public.users_hobbies OWNER TO seniorlove;
 
 --
--- Name: users_hobbies_id_seq; Type: SEQUENCE; Schema: public; Owner: senior
+-- Name: users_hobbies_id_seq; Type: SEQUENCE; Schema: public; Owner: seniorlove
 --
 
 ALTER TABLE public.users_hobbies ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY (
@@ -226,7 +226,7 @@ ALTER TABLE public.users_hobbies ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTIT
 
 
 --
--- Name: users_id_seq; Type: SEQUENCE; Schema: public; Owner: senior
+-- Name: users_id_seq; Type: SEQUENCE; Schema: public; Owner: seniorlove
 --
 
 ALTER TABLE public.users ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY (
@@ -240,7 +240,7 @@ ALTER TABLE public.users ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY (
 
 
 --
--- Name: users_messages; Type: TABLE; Schema: public; Owner: senior
+-- Name: users_messages; Type: TABLE; Schema: public; Owner: seniorlove
 --
 
 CREATE TABLE public.users_messages (
@@ -254,10 +254,10 @@ CREATE TABLE public.users_messages (
 );
 
 
-ALTER TABLE public.users_messages OWNER TO senior;
+ALTER TABLE public.users_messages OWNER TO seniorlove;
 
 --
--- Name: users_messages_id_seq; Type: SEQUENCE; Schema: public; Owner: senior
+-- Name: users_messages_id_seq; Type: SEQUENCE; Schema: public; Owner: seniorlove
 --
 
 ALTER TABLE public.users_messages ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY (
@@ -271,16 +271,16 @@ ALTER TABLE public.users_messages ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTI
 
 
 --
--- Data for Name: administrators; Type: TABLE DATA; Schema: public; Owner: senior
+-- Data for Name: administrators; Type: TABLE DATA; Schema: public; Owner: seniorlove
 --
 
 COPY public.administrators (id, name, email, password, created_at, updated_at) FROM stdin;
-1	admin	admin1@seniorlove.com	f7830c2711df2a75cfa995c0cc48844ced089a68083122ebdbd1b3f03cce103c809a9b5fea23f97fc7fa2aa60bd039cfb957aece3cf43d07a453eecc16564ed2.f9d7ca21ceed12cb867af3b5fadd5f5e	2024-09-18 15:44:27.253182+02	\N
+1	admin	admin1@seniorlovelove.com	f7830c2711df2a75cfa995c0cc48844ced089a68083122ebdbd1b3f03cce103c809a9b5fea23f97fc7fa2aa60bd039cfb957aece3cf43d07a453eecc16564ed2.f9d7ca21ceed12cb867af3b5fadd5f5e	2024-09-18 15:44:27.253182+02	\N
 \.
 
 
 --
--- Data for Name: events; Type: TABLE DATA; Schema: public; Owner: senior
+-- Data for Name: events; Type: TABLE DATA; Schema: public; Owner: seniorlove
 --
 
 COPY public.events (id, name, location, description, picture, picture_id, date, "time", admin_id, created_at, updated_at) FROM stdin;
@@ -288,7 +288,7 @@ COPY public.events (id, name, location, description, picture, picture_id, date, 
 2	Apéro céramique	Lyon	Venez explorer votre créativité au cœur de Lyon lors de notre atelier de céramique ! Pour une journée, plongez dans l'univers fascinant de la poterie et du modelage sous l'œil expert de céramistes passionnés. Le matin, découvrez les techniques de base pour façonner et sculpter l'argile, en créant des pièces uniques telles que des bols et des vases. Après une pause déjeuner gourmande, poursuivez avec un atelier sur la décoration et l'émaillage, où vous apprendrez à appliquer des motifs et des couleurs vibrantes à vos créations. À la fin de la journée, repartez avec vos œuvres, prêtes à être cuites et exposées. Que vous soyez novice ou amateur confirmé, cet atelier vous offre une occasion idéale pour exprimer votre créativité tout en profitant de l'atmosphère chaleureuse et inspirante de Lyon. Réservez votre place pour une journée artistique et enrichissante !	https://images.pexels.com/photos/22823/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1	\N	2024-12-03	17:30:00	1	2024-09-18 15:44:31.739646+02	\N
 3	Atelier mixologie	Marseille	Venez vivre une soirée pétillante et raffinée à Marseille lors de notre atelier de mixologie ! Plongez dans l'art de la création de cocktails sous la houlette de barmen experts, qui vous guideront à travers les techniques essentielles et les secrets des mélanges audacieux. L'atelier commence par une introduction aux bases de la mixologie, suivie de la préparation de cocktails emblématiques et innovants, tels que le Mojito revisité ou le Negroni parfait. Après une pause pour déguster vos créations accompagnées de tapas gourmet, vous explorerez des astuces de présentation et des combinaisons de saveurs originales. Que vous soyez un amateur de cocktails ou un passionné en quête de nouvelles compétences, cet événement promet une expérience ludique et instructive dans un cadre chic et convivial. Réservez votre place dès maintenant pour une soirée savoureuse et animée au cœur de Marseille !	https://images.pexels.com/photos/2789328/pexels-photo-2789328.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1	\N	2024-12-20	18:00:00	1	2024-09-18 15:44:31.739646+02	\N
 4	Dégustation de vins	Bordeaux	Venez découvrir l'élégance des grands crus lors de notre événement de dégustation de vin à Bordeaux ! Ce rendez-vous incontournable vous plonge dans l'univers fascinant des vignobles bordelais. La journée commence par un accueil chaleureux avec un verre de vin pétillant, suivi d'une présentation captivante des cépages emblématiques de la région. Sous la conduite d’experts œnologues, vous apprendrez à déguster et à apprécier les subtilités des grands Bordeaux, des rouges puissants aux blancs raffinés. Chaque session est accompagnée de bouchées gastronomiques préparées pour sublimer les accords mets-vins. En fin de journée, vous aurez l'opportunité de discuter avec les producteurs locaux et de découvrir leurs secrets de vinification. Que vous soyez novice ou connaisseur, cet événement promet une immersion sensorielle enrichissante au cœur de la capitale du vin. Réservez dès maintenant pour vivre une expérience inoubliable dans l'une des plus célèbres régions viticoles du monde !	https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1	\N	2024-12-15	11:30:00	1	2024-09-18 15:44:31.739646+02	\N
-5	Speed dating	Nice	Venez vivre une soirée conviviale et pleine de rencontres à Nice lors de notre événement de speed dating spécialement conçu pour les seniors ! Dans un cadre élégant et chaleureux, cet événement vous offre une opportunité unique de faire de nouvelles connaissances et de partager des moments précieux avec des personnes ayant des intérêts et des expériences de vie similaires. Chaque participant aura la chance de discuter brièvement avec plusieurs personnes au cours de sessions de 5 à 7 minutes, permettant ainsi de découvrir de nouvelles affinités et de nouer des liens significatifs. Après les rencontres, profitez d'un moment de détente autour d’un verre et de douceurs, pour échanger librement et prolonger les conversations. Que vous cherchiez une nouvelle amitié ou une connexion plus personnelle, cette soirée est l'occasion parfaite de redécouvrir les plaisirs de la rencontre dans une ambiance détendue et respectueuse. Réservez votre place pour une expérience enrichissante au cœur de Nice !	https://images.pexels.com/photos/330247/pexels-photo-330247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1	\N	2024-12-03	19:00:00	1	2024-09-18 15:44:31.739646+02	\N
+5	Speed dating	Nice	Venez vivre une soirée conviviale et pleine de rencontres à Nice lors de notre événement de speed dating spécialement conçu pour les seniorloves ! Dans un cadre élégant et chaleureux, cet événement vous offre une opportunité unique de faire de nouvelles connaissances et de partager des moments précieux avec des personnes ayant des intérêts et des expériences de vie similaires. Chaque participant aura la chance de discuter brièvement avec plusieurs personnes au cours de sessions de 5 à 7 minutes, permettant ainsi de découvrir de nouvelles affinités et de nouer des liens significatifs. Après les rencontres, profitez d'un moment de détente autour d’un verre et de douceurs, pour échanger librement et prolonger les conversations. Que vous cherchiez une nouvelle amitié ou une connexion plus personnelle, cette soirée est l'occasion parfaite de redécouvrir les plaisirs de la rencontre dans une ambiance détendue et respectueuse. Réservez votre place pour une expérience enrichissante au cœur de Nice !	https://images.pexels.com/photos/330247/pexels-photo-330247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1	\N	2024-12-03	19:00:00	1	2024-09-18 15:44:31.739646+02	\N
 6	Atelier jardinage	Toulouse	Rejoignez-nous pour une journée verdoyante et enrichissante lors de notre atelier de jardinage à Toulouse ! Cet événement vous plonge dans l'art de cultiver un jardin florissant, que vous soyez novice ou passionné. La matinée débute par une introduction aux techniques de base du jardinage, incluant la préparation du sol, la sélection des plantes adaptées et les secrets pour une croissance optimale. Après une pause gourmande, passez à la pratique en créant vos propres pots de fleurs ou jardinières, tout en apprenant les astuces pour entretenir vos plantations. Nos experts vous guideront également sur la gestion des ressources naturelles et des outils de jardinage. En fin de journée, repartez avec vos créations et des conseils personnalisés pour continuer à développer votre jardin chez vous. Profitez de cette occasion pour partager votre passion avec d'autres amoureux de la nature dans un cadre convivial et inspirant. Réservez dès maintenant pour une immersion totale dans le monde du jardinage à Toulouse !	https://images.pexels.com/photos/27176060/pexels-photo-27176060/free-photo-of-legumes-nature-terre-agriculture.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1	\N	2024-12-12	08:30:00	1	2024-09-18 15:44:31.739646+02	\N
 7	Cours de photographie	Strasbourg	Participez à notre événement captivant de cours de photographie à Strasbourg et découvrez les secrets pour capturer des images éblouissantes ! Cette journée immersive commence par une introduction aux techniques fondamentales de la photographie, de la composition à l'éclairage, animée par des professionnels expérimentés. Ensuite, mettez en pratique vos nouvelles compétences lors d'une session de prise de vue dans les charmantes rues et paysages strasbourgeois. Après une pause déjeuner, plongez dans les astuces de retouche photo avec des logiciels spécialisés pour sublimer vos clichés. Vous aurez également l'opportunité de partager vos photos avec les autres participants et de recevoir des critiques constructives. Que vous soyez débutant ou photographe amateur, cet atelier vous offre une chance unique d'améliorer votre art tout en explorant la beauté de Strasbourg. Réservez dès maintenant pour capturer des souvenirs inoubliables et perfectionner votre technique !	https://images.pexels.com/photos/243757/pexels-photo-243757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1	\N	2024-12-06	09:30:00	1	2024-09-18 15:44:31.739646+02	\N
 8	Soirée jazz	Nantes	Plongez dans une soirée envoûtante de jazz à Nantes et laissez-vous emporter par des mélodies enivrantes ! Cet événement exceptionnel vous invite à découvrir le meilleur du jazz dans une ambiance élégante et intimiste. La soirée commence avec un accueil chaleureux, suivi d'une performance en direct d'artistes de jazz de renom qui vous séduiront avec des improvisations captivantes et des standards intemporels. Profitez d’une sélection raffinée de cocktails et de tapas gourmet tout en vous imprégnant des rythmes entraînants et des harmonies sophistiquées. Laissez-vous bercer par les sonorités du saxophone, du piano et de la batterie dans un cadre convivial où la musique crée des moments magiques. Que vous soyez un amateur de jazz ou simplement en quête d'une soirée mémorable, cet événement promet une expérience sensorielle inoubliable au cœur de Nantes. Réservez dès maintenant pour une nuit de jazz élégante et inspirante !	https://images.pexels.com/photos/1358817/pexels-photo-1358817.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1	\N	2024-12-10	20:00:00	1	2024-09-18 15:44:31.739646+02	\N
@@ -296,13 +296,13 @@ COPY public.events (id, name, location, description, picture, picture_id, date, 
 10	Cours de chorale	Avignon	Rejoignez-nous pour une journée musicale inoubliable lors de notre cours de chorale à Avignon ! Que vous soyez un chanteur débutant ou expérimenté, cet événement est l’occasion idéale de découvrir les plaisirs du chant choral dans un cadre inspirant. Sous la direction d’un chef de chœur passionné, vous apprendrez à interpréter des morceaux variés, allant des classiques intemporels aux chansons modernes. Le matin, vous participerez à des échauffements vocaux et des techniques de respiration, avant de plonger dans la pratique en groupe. Après une pause déjeuner conviviale, continuez à perfectionner votre voix et votre harmonie avec des exercices dynamiques. En fin de journée, partagez le fruit de votre travail avec une performance en petit groupe, mettant en valeur les progrès réalisés. Venez vivre une expérience enrichissante et harmonieuse au cœur d’Avignon, où musique et convivialité se rencontrent !	https://images.pexels.com/photos/7520744/pexels-photo-7520744.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1	\N	2024-12-23	16:00:00	1	2024-09-18 15:44:31.739646+02	\N
 11	Soirée méditation	Rennes	Offrez-vous une soirée de sérénité et de bien-être lors de notre soirée méditation à Rennes ! Dans un cadre apaisant et élégant, plongez dans l’univers de la pleine conscience et du calme intérieur. La soirée commence par une introduction douce aux principes de la méditation, suivie de séances guidées adaptées à tous les niveaux. Nos instructeurs expérimentés vous guideront à travers des pratiques de méditation variées, allant de la relaxation profonde à la pleine conscience, pour vous aider à libérer le stress et retrouver votre équilibre. Après une pause revitalisante avec des infusions et des en-cas sains, poursuivez avec une méditation en groupe, favorisant un sentiment de connexion et de paix intérieure. Que vous soyez novice ou méditant régulier, cette soirée vous offrira une pause bien méritée dans la routine quotidienne. Réservez dès maintenant pour une expérience de méditation apaisante et revitalisante au cœur de Rennes !	https://images.pexels.com/photos/1051838/pexels-photo-1051838.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1	\N	2024-12-19	21:00:00	1	2024-09-18 15:44:31.739646+02	\N
 12	Balade en montgolfière	Saumur	Vivez une aventure inoubliable avec notre balade en montgolfière au-dessus de Saumur ! Offrez-vous une vue panoramique spectaculaire sur les paysages enchâssés de la vallée de la Loire et les châteaux majestueux qui ornent la région. À l''aube, vous serez accueilli avec un petit-déjeuner léger avant de participer à la préparation de la montgolfière, où vous découvrirez le processus fascinant de gonflage. Une fois dans les airs, laissez-vous emporter par la douce montée et admirez les panoramas époustouflants qui se dévoilent sous vos yeux. Votre pilote expérimenté partagera des anecdotes locales et vous guidera tout au long de cette expérience magique. À la fin du vol, célébrez votre aventure avec un toast traditionnel et un certificat souvenir. Réservez dès maintenant pour un voyage aérien mémorable qui allie sérénité et émerveillement au cœur de Saumur !	https://images.pexels.com/photos/24877165/pexels-photo-24877165/free-photo-of-vol-paysage-ciel-nuages.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1	\N	2024-12-07	10:30:00	1	2024-09-18 15:44:31.739646+02	\N
-13	Prise en main du smartphone	Paris	Découvrez la magie de la technologie avec notre événement spécial pour les personnes âgées : Tech & Convivialité : Atelier Découverte des Nouveaux Outils Numériques ! Ce rendez-vous convivial est conçu pour familiariser les seniors avec les dernières innovations technologiques dans un cadre détendu et encourageant.L''événement commence par une introduction chaleureuse sur les bases des appareils numériques modernes, comme les smartphones et les tablettes. Ensuite, nos experts vous guideront à travers des ateliers pratiques où vous apprendrez à utiliser des applications courantes telles que les réseaux sociaux, les messageries instantanées, et les services de vidéo-conférence pour rester connecté avec vos proches.Après une pause-café, explorez les outils de sécurité en ligne pour protéger vos données et découvrez les applications de santé qui peuvent améliorer votre quotidien. Les sessions sont interactives et adaptées à votre rythme, permettant un apprentissage personnalisé et une assistance individuelle. En fin de journée, partagez vos nouvelles compétences autour d’un goûter et posez toutes vos questions à nos experts. Réservez dès maintenant pour un après-midi enrichissant où la technologie devient accessible et amusante, tout en favorisant l’échange et la convivialité !	https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1	\N	2024-12-08	10:30:00	1	2024-09-18 15:44:31.739646+02	\N
-14	Voyance solaire	Paris	Venez voir comment lire dans l'avenir, dans notre goulotte.\r\nVous apprendrez les rudiment de la voyances et de la numérologie, comme jamais ! Aller voir notre brochure sur http://www.afinity-seniors.com et inscrivez vous pour participer à cet atelier.\r\nAttention, le nombre de place est limité.	https://res.cloudinary.com/dsb2ihfdx/image/upload/v1726761288/event_photos/eu6ybva6gjf3lqu5qzb7.png	event_photos/eu6ybva6gjf3lqu5qzb7	2024-11-06	23:55:00	\N	2024-09-19 17:54:47.56+02	2024-09-19 17:54:47.561+02
+13	Prise en main du smartphone	Paris	Découvrez la magie de la technologie avec notre événement spécial pour les personnes âgées : Tech & Convivialité : Atelier Découverte des Nouveaux Outils Numériques ! Ce rendez-vous convivial est conçu pour familiariser les seniorloves avec les dernières innovations technologiques dans un cadre détendu et encourageant.L''événement commence par une introduction chaleureuse sur les bases des appareils numériques modernes, comme les smartphones et les tablettes. Ensuite, nos experts vous guideront à travers des ateliers pratiques où vous apprendrez à utiliser des applications courantes telles que les réseaux sociaux, les messageries instantanées, et les services de vidéo-conférence pour rester connecté avec vos proches.Après une pause-café, explorez les outils de sécurité en ligne pour protéger vos données et découvrez les applications de santé qui peuvent améliorer votre quotidien. Les sessions sont interactives et adaptées à votre rythme, permettant un apprentissage personnalisé et une assistance individuelle. En fin de journée, partagez vos nouvelles compétences autour d’un goûter et posez toutes vos questions à nos experts. Réservez dès maintenant pour un après-midi enrichissant où la technologie devient accessible et amusante, tout en favorisant l’échange et la convivialité !	https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1	\N	2024-12-08	10:30:00	1	2024-09-18 15:44:31.739646+02	\N
+14	Voyance solaire	Paris	Venez voir comment lire dans l'avenir, dans notre goulotte.\r\nVous apprendrez les rudiment de la voyances et de la numérologie, comme jamais ! Aller voir notre brochure sur http://www.afinity-seniorloves.com et inscrivez vous pour participer à cet atelier.\r\nAttention, le nombre de place est limité.	https://res.cloudinary.com/dsb2ihfdx/image/upload/v1726761288/event_photos/eu6ybva6gjf3lqu5qzb7.png	event_photos/eu6ybva6gjf3lqu5qzb7	2024-11-06	23:55:00	\N	2024-09-19 17:54:47.56+02	2024-09-19 17:54:47.561+02
 \.
 
 
 --
--- Data for Name: events_hobbies; Type: TABLE DATA; Schema: public; Owner: senior
+-- Data for Name: events_hobbies; Type: TABLE DATA; Schema: public; Owner: seniorlove
 --
 
 COPY public.events_hobbies (id, event_id, hobby_id, created_at, updated_at) FROM stdin;
@@ -334,7 +334,7 @@ COPY public.events_hobbies (id, event_id, hobby_id, created_at, updated_at) FROM
 
 
 --
--- Data for Name: hobbies; Type: TABLE DATA; Schema: public; Owner: senior
+-- Data for Name: hobbies; Type: TABLE DATA; Schema: public; Owner: seniorlove
 --
 
 COPY public.hobbies (id, name, created_at, updated_at) FROM stdin;
@@ -354,7 +354,7 @@ COPY public.hobbies (id, name, created_at, updated_at) FROM stdin;
 
 
 --
--- Data for Name: users; Type: TABLE DATA; Schema: public; Owner: senior
+-- Data for Name: users; Type: TABLE DATA; Schema: public; Owner: seniorlove
 --
 
 COPY public.users (id, name, birth_date, description, gender, picture, picture_id, email, password, old_password, new_password, repeat_new_password, status, created_at, updated_at) FROM stdin;
@@ -368,14 +368,14 @@ COPY public.users (id, name, birth_date, description, gender, picture, picture_i
 8	Gérard	1947-09-18	Je m'appelle Gérard, un passionné de sport et de nature. J'ai passé ma vie à enseigner l'éducation physique, et même à la retraite, je reste actif en pratiquant la randonnée et le vélo. J'aime explorer les sentiers de montagne et profiter de la beauté de la nature. En dehors du sport, je suis un amateur de photographie, capturant les paysages que je découvre lors de mes randonnées. J'aime aussi cuisiner des plats simples et sains, souvent avec des ingrédients que je cultive moi-même. Ma famille et mes amis sont très importants pour moi, et je passe beaucoup de temps avec eux, partageant des repas et des moments de convivialité.	male	https://images.pexels.com/photos/2421934/pexels-photo-2421934.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1	\N	gerard@example.com	91f11d31ef2cd939d79f153fe88982f3192c96a6a166334cfeb92dbfccf000b7e7e41d509b62571e37fbd0142c419e1418e2f165007f5dd476d667911bddc3d6.65c3b9597187a7ca19a36983932b5214	\N	\N	\N	active	2024-09-18 15:44:03.399674+02	\N
 9	Marie	1949-06-10	Je suis Marie, une passionnée de jardinage et de lecture. Mon jardin est mon sanctuaire, un endroit où je peux passer des heures à planter, tailler et entretenir mes fleurs. J'aime particulièrement les roses, que je cultive avec soin. Quand je ne suis pas dans mon jardin, je suis probablement en train de lire un roman ou un livre d'histoire. Je fais partie d'un club de lecture où nous partageons nos découvertes littéraires. En plus de cela, j'aime voyager, surtout pour découvrir de nouveaux jardins botaniques et rencontrer d'autres passionnés de plantes. La nature est une source d'inspiration pour moi, et je cherche toujours à apprendre et à partager mes connaissances.	female	https://images.pexels.com/photos/788567/pexels-photo-788567.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1	\N	marie@example.com	ebeb5d5f206382a5bb4fadbb75cd2d397353b4113677d8e5356fe56b391a91561b639e0e45fa33c30cd38d2298b277a71dcfc12e7d6713f9225a1658a7923b3d.5e9d791a078cfa2c63f6ed44029895dc	\N	\N	\N	active	2024-09-18 15:44:03.707624+02	\N
 10	Bernard	1951-12-20	Je suis Bernard, un passionné d'histoire et de modélisme. Depuis toujours, je suis fasciné par les récits historiques, en particulier ceux qui concernent les guerres mondiales. J'ai passé des années à construire des maquettes de navires et d'avions de cette époque, une activité qui me détend et me passionne. En plus de cela, j'aime lire des biographies et des documentaires historiques. Je suis également un amateur de vin, et j'aime découvrir de nouvelles régions viticoles lors de mes voyages. En dehors de mes passions, je suis très impliqué dans ma communauté, organisant des conférences et des expositions sur l'histoire locale.	male	https://images.pexels.com/photos/25758/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1	\N	bernard@example.com	f1693131f3b0383699ef70261e8c41f5dc80262948a593aaa50ce5cfe3bf3766d60e948d879bc329bcdecf49c62dd0fd0fb28fff8f5aee74555512e666bd8aed.0ed0e07d5e2dbf6403ecc800a8ab6c3e	\N	\N	\N	active	2024-09-18 15:44:04.014479+02	\N
-11	Jacques	1945-05-14	Je suis Jacques, un amateur de machines à écrire anciennes. Depuis ma retraite, je passe mes journées à restaurer ces machines et à les utiliser pour écrire des lettres et des histoires. J’apprécie le calme de mon atelier, où je peux me plonger dans des tâches manuelles et créatives. En dehors de cela, j’aime lire des romans classiques et m’intéresse à l’histoire des technologies de communication. Je passe aussi beaucoup de temps à partager mes connaissances avec d’autres passionnés lors de salons et d’expositions.	male	https://img.freepik.com/free-photo/senior-caucasian-man-using-vintage-typewriter-grayscale_53876-31560.jpg?t=st=1725032211~exp=1725035811~hmac=fd133fedfcf1cd11cfb5074c62b8d1bdeed30fa7c902b9c4c248c3e3f6500148&w=2000	\N	jacques.dubois@example.com	69a1f5df2066ccd513652b735b0bc8d031953a427593d0c9091cf027bf38165a3dc6a8baeb530bb94a14051b9186f96a020e079e923bf47be3b4e046c02f3012.545293478d86353c1c71f3cf8080f5f4	\N	\N	\N	banned	2024-09-18 15:44:04.321096+02	\N
+11	Jacques	1945-05-14	Je suis Jacques, un amateur de machines à écrire anciennes. Depuis ma retraite, je passe mes journées à restaurer ces machines et à les utiliser pour écrire des lettres et des histoires. J’apprécie le calme de mon atelier, où je peux me plonger dans des tâches manuelles et créatives. En dehors de cela, j’aime lire des romans classiques et m’intéresse à l’histoire des technologies de communication. Je passe aussi beaucoup de temps à partager mes connaissances avec d’autres passionnés lors de salons et d’expositions.	male	https://img.freepik.com/free-photo/seniorlove-caucasian-man-using-vintage-typewriter-grayscale_53876-31560.jpg?t=st=1725032211~exp=1725035811~hmac=fd133fedfcf1cd11cfb5074c62b8d1bdeed30fa7c902b9c4c248c3e3f6500148&w=2000	\N	jacques.dubois@example.com	69a1f5df2066ccd513652b735b0bc8d031953a427593d0c9091cf027bf38165a3dc6a8baeb530bb94a14051b9186f96a020e079e923bf47be3b4e046c02f3012.545293478d86353c1c71f3cf8080f5f4	\N	\N	\N	banned	2024-09-18 15:44:04.321096+02	\N
 12	Henri	1942-07-22	Je suis Henri, un passionné de téléphones anciens. J’aime collectionner et restaurer ces objets fascinants qui rappellent une époque révolue. Ma journée typique consiste à travailler sur mes téléphones, en réparant et en nettoyant les pièces pour les faire revivre. J’organise également des rencontres avec d’autres collectionneurs et amateurs de vintage, où nous échangeons des histoires et des techniques de restauration.	male	https://img.freepik.com/free-photo/old-man-holding-telephone_23-2148432087.jpg?t=st=1725032288~exp=1725035888~hmac=619f47b4e7d7b1d421a987f46bc01df2c5e1edda177b3a53c0eae830dd8e66ce&w=1060	\N	henri.moreau@example.com	91d120beade731912846865c70af9168bfaf6fbb5ca5708bfbab68d4e8a7a13d58bc3447849355c3c7159ec61414c2eb34539e2087578d6bdfffdd385dbfd89a.b51ddd55c24ac727932d6057e26de4e6	\N	\N	\N	active	2024-09-18 15:44:04.627549+02	\N
-13	Paul	1938-11-01	Je suis Paul, un amateur de photographie qui aime capturer des moments précieux avec mon appareil photo. J’ai passé ma vie à explorer le monde à travers l’objectif et à partager mes photos avec d’autres passionnés. Je consacre une grande partie de mon temps à prendre des photos lors de différents événements et paysages, tout en discutant des techniques et des équipements avec mes amis photographes.	male	https://img.freepik.com/free-photo/portrait-senior-man-with-camera-device-world-photography-day-celebration_23-2151657270.jpg?t=st=1725032354~exp=1725035954~hmac=5a956684a0deeafc69574ac1dd25227ad998b3c9fe64b0af8a95d7d234e066e0&w=2000	\N	paul.lefebvre@example.com	d207193c67fa02470269b62d5dc19f69a505ea6cf2aa8367aa1fff153431e197e21ca4d4c8d2ae06cc625ebf94d30642cfe376637a59935305ecfc19e97991ed.eef8d64bf4c5c09ca89caaa038ba8d00	\N	\N	\N	active	2024-09-18 15:44:04.934679+02	\N
+13	Paul	1938-11-01	Je suis Paul, un amateur de photographie qui aime capturer des moments précieux avec mon appareil photo. J’ai passé ma vie à explorer le monde à travers l’objectif et à partager mes photos avec d’autres passionnés. Je consacre une grande partie de mon temps à prendre des photos lors de différents événements et paysages, tout en discutant des techniques et des équipements avec mes amis photographes.	male	https://img.freepik.com/free-photo/portrait-seniorlove-man-with-camera-device-world-photography-day-celebration_23-2151657270.jpg?t=st=1725032354~exp=1725035954~hmac=5a956684a0deeafc69574ac1dd25227ad998b3c9fe64b0af8a95d7d234e066e0&w=2000	\N	paul.lefebvre@example.com	d207193c67fa02470269b62d5dc19f69a505ea6cf2aa8367aa1fff153431e197e21ca4d4c8d2ae06cc625ebf94d30642cfe376637a59935305ecfc19e97991ed.eef8d64bf4c5c09ca89caaa038ba8d00	\N	\N	\N	active	2024-09-18 15:44:04.934679+02	\N
 14	Lucien	1947-02-10	Je suis Lucien, un homme sage qui aime passer du temps dans des lieux calmes et paisibles. J’aime me promener et profiter de la tranquillité des espaces intérieurs, où je peux réfléchir et apprécier la simplicité de la vie. Je trouve du plaisir à observer les détails de mon environnement et à partager ces moments de calme avec les autres.	male	https://img.freepik.com/free-photo/old-man-posing-indoors-side-view_23-2149883573.jpg?t=st=1725032412~exp=1725036012~hmac=cd9635a4d9330751174c813c7cfa8e51c5ccac00cd5a1d87d5eaa33eff9642eb&w=1060	\N	lucien.bernard@example.com	d1152e2fd444aa8a1e54d6d7bd74ac8bf29360ed92d5a4d7e82e044f928102fcf3fe4fa4c6f62d2a50d3dddab25d5d11df363515b05046a0e075494ad768f408.14d50c616b148f0428c9bd0c8f667aef	\N	\N	\N	active	2024-09-18 15:44:05.241687+02	\N
-15	Éric	1962-03-05	Je suis Éric, un homme élégant qui aime s’habiller avec soin et profiter des belles journées ensoleillées. J’apprécie les moments passés en plein air, surtout lorsqu’ils me permettent de montrer mes tenues préférées. Je suis également passionné par la mode et l’élégance, ce qui se reflète dans chaque aspect de ma vie.	male	https://img.freepik.com/free-photo/senior-man-posing-white-shirt-hat_23-2149487991.jpg?t=st=1725032446~exp=1725036046~hmac=371f49f8f4c97c753d37f1a7c3f0942bb440b3aa4f99767716c81009ac87bb65&w=2000	\N	eric.martin@example.com	adec590eb55bcc293409f79457a73bdd2009d9df2a9b117a02d6a096b87bc5f6b336949f7462d9c98f25669c0d6dc1205071ba0efd8b31b15258913241db75e1.f2c15065f7bb1062435b03462b3761e6	\N	\N	\N	pending	2024-09-18 15:44:05.548057+02	\N
+15	Éric	1962-03-05	Je suis Éric, un homme élégant qui aime s’habiller avec soin et profiter des belles journées ensoleillées. J’apprécie les moments passés en plein air, surtout lorsqu’ils me permettent de montrer mes tenues préférées. Je suis également passionné par la mode et l’élégance, ce qui se reflète dans chaque aspect de ma vie.	male	https://img.freepik.com/free-photo/seniorlove-man-posing-white-shirt-hat_23-2149487991.jpg?t=st=1725032446~exp=1725036046~hmac=371f49f8f4c97c753d37f1a7c3f0942bb440b3aa4f99767716c81009ac87bb65&w=2000	\N	eric.martin@example.com	adec590eb55bcc293409f79457a73bdd2009d9df2a9b117a02d6a096b87bc5f6b336949f7462d9c98f25669c0d6dc1205071ba0efd8b31b15258913241db75e1.f2c15065f7bb1062435b03462b3761e6	\N	\N	\N	pending	2024-09-18 15:44:05.548057+02	\N
 16	Alain	1935-09-20	Je suis Alain, un homme âgé qui aime se détendre dans les parcs et profiter de la nature. J’apprécie particulièrement les moments de repos sur un banc, où je peux observer les gens et profiter du paysage. C’est dans ces moments de calme que je me sens le plus connecté avec le monde qui m’entoure.	male	https://img.freepik.com/free-photo/front-view-old-man-sitting-bench_23-2150493075.jpg?t=st=1725032486~exp=1725036086~hmac=e828fbb7cdefd7fcf040257ab6678c3631da7433837adeff4f1111d641bd93aa&w=2000	\N	alain.durand@example.com	4d45e18b6be3ffc2622fd6afa3fcc58b3585febcdda9a3937847250e7d6f4a81b5ff2457dc28a2059bdd07b5bb60c79bd86dd54615030ccd64a0be5dec6a713f.d75f2d755178e35896200adf537dd9c0	\N	\N	\N	active	2024-09-18 15:44:05.853129+02	\N
 17	Maurice	1949-12-30	Je suis Maurice, un homme moyen qui apprécie de prendre des promenades régulières pour rester actif et en bonne santé. J’aime découvrir de nouveaux endroits tout en me maintenant en forme. Chaque promenade est une occasion pour moi de réfléchir et de profiter des petites choses de la vie.	male	https://img.freepik.com/free-photo/medium-shot-elderly-man-taking-stroll_23-2150168211.jpg?t=st=1725032669~exp=1725036269~hmac=233ff2f2329d68aea9400db57c6581fd1e390c6ca70bddf6e218639f10689d51&w=1060	\N	maurice.lefevre@example.com	7f4979d4fd41a428b106e4b972517afefc69b3b5f977890bd61f06d7aa397373625194a8462be618c21678f5f3eaff7913b01ad69afbaf3facf18fd99a6a4b9d.affe7ac3ab13eb6708c58f2cd7de71dc	\N	\N	\N	active	2024-09-18 15:44:06.159441+02	\N
-18	Louis	1939-10-10	Je suis Louis, un homme sage qui aime poser pour des photos et capturer des moments précieux de la vie. J’apprécie particulièrement les séances photo en studio, où je peux exprimer ma personnalité et partager des instants de ma vie avec les autres.	male	https://img.freepik.com/free-photo/wise-senior-man-posing-indoors-front-view_23-2149883531.jpg?t=st=1725032688~exp=1725036288~hmac=00da6a70e10d070217905040c9ae39e5ee3cbe536bda730782877c5ca025b0c9&w=2000	\N	louis.chevalier@example.com	1e32ba1423a5ce3bdb01789c80a1f4c3186c6a4be7e3a3fe003bf9978a3046bd2984f5568c431d76c249e32c3cfc29271b1dcc899a90e76f79b47f37cd270b5f.90b7c7b9b37ee989a401037af37b0487	\N	\N	\N	active	2024-09-18 15:44:06.463632+02	\N
+18	Louis	1939-10-10	Je suis Louis, un homme sage qui aime poser pour des photos et capturer des moments précieux de la vie. J’apprécie particulièrement les séances photo en studio, où je peux exprimer ma personnalité et partager des instants de ma vie avec les autres.	male	https://img.freepik.com/free-photo/wise-seniorlove-man-posing-indoors-front-view_23-2149883531.jpg?t=st=1725032688~exp=1725036288~hmac=00da6a70e10d070217905040c9ae39e5ee3cbe536bda730782877c5ca025b0c9&w=2000	\N	louis.chevalier@example.com	1e32ba1423a5ce3bdb01789c80a1f4c3186c6a4be7e3a3fe003bf9978a3046bd2984f5568c431d76c249e32c3cfc29271b1dcc899a90e76f79b47f37cd270b5f.90b7c7b9b37ee989a401037af37b0487	\N	\N	\N	active	2024-09-18 15:44:06.463632+02	\N
 19	Claude	1948-08-14	Je suis Claude, un homme âgé qui aime porter des chapeaux élégants. J’apprécie les jours ensoleillés où je peux me promener en extérieur tout en mettant en avant mes accessoires de mode préférés. La mode et le style sont importants pour moi et me permettent de m’exprimer au quotidien.	male	https://img.freepik.com/free-photo/front-view-elderly-man-wearing-hat_23-2150168218.jpg?t=st=1725032702~exp=1725036302~hmac=b328d1a98bc49af424cf01c4874705155c90ccca198c78dd0ffbc78b49595e48&w=1060	\N	claude.duval@example.com	deece60198e2630cc9ee542566d59adf5cac6179b55d9b914b5127da1ee9034568f57418748a013e7a80c5f0d57596db9083b3dc901e2abda8a0f1e8db01f03f.1651836b7790fd8d3accf76947235a57	\N	\N	\N	active	2024-09-18 15:44:06.769168+02	\N
 20	Jean	1936-02-28	Je suis Jean, un homme qui aime profiter des belles journées et de la nature. Rien ne me fait plus plaisir que de prendre une tasse de café en extérieur, entouré par la beauté naturelle. C’est dans ces moments simples que je trouve le plus grand bonheur.	male	https://images.pexels.com/photos/34534/people-peoples-homeless-male.jpg?auto=compress&cs=tinysrgb&w=600	\N	jean.moret@example.com	254d05493d49c9a9886bdb6b7cb782ccd01deb4c9ba4190a67b3eca6694856260f34777a378edc7a04846ef80ab1b6816ec0b1b74bb2a096c38395ba33520e6c.3786fb3effaf4da29119711916ebe8e0	\N	\N	\N	active	2024-09-18 15:44:07.074424+02	\N
 21	Marcel	1946-03-21	Je suis Marcel, un passionné de jardinage qui passe la plupart de mon temps dans mon jardin. J'adore planter des fleurs et des légumes et voir comment ils poussent jour après jour. Le jardinage est ma manière de rester actif et connecté avec la nature.	male	https://images.pexels.com/photos/1139743/pexels-photo-1139743.jpeg?auto=compress&cs=tinysrgb&w=600	\N	marcel.dupont@example.com	dd7c23ed2ba300db925edec2a4b048da0a21f14e395bc0a8314ab04999a3d02b45a6a589e6333a752dbecad9aed01deafd22bde9bacd2a2f3a009dea24fd8e96.2212bdd23ab93e43ff69b8a1821b4915	\N	\N	\N	active	2024-09-18 15:44:07.379099+02	\N
@@ -424,7 +424,7 @@ COPY public.users (id, name, birth_date, description, gender, picture, picture_i
 70	Brigitte	1951-05-04	Je suis une passionnée de poésie et de littérature. Je participe à des cercles de lecture et organise des soirées poésie où je partage mes poèmes avec mes amis. Je suis également impliquée dans des projets de soutien aux jeunes écrivains.	female	https://images.pexels.com/photos/5705526/pexels-photo-5705526.jpeg?auto=compress&cs=tinysrgb&w=600	\N	brigitte@example.com	2a7982b8953874b0f326db3772c97d6d53edd639ca39f4c496f1aa6326ce0c6234eb9328f9b290febc6ef446a3df956a3d73255d6fa721c5ebf3e875c1542b1e.69d70fd6ad93818f0ffcd2bc5b750903	\N	\N	\N	active	2024-09-18 15:44:22.363079+02	\N
 71	Marie	1955-03-18	Je suis Marie, passionnée de jardinage et de cuisine bio. Ancienne institutrice, je consacre maintenant mon temps à cultiver mon potager et à partager mes connaissances sur l'alimentation saine avec ma communauté. J'anime des ateliers de cuisine pour les enfants du quartier, leur apprenant à apprécier les légumes qu'ils ont eux-mêmes cultivés.	female	https://images.pexels.com/photos/5637499/pexels-photo-5637499.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1	\N	marie.jardin55@example.com	aac1c279da86278debf6fd6b30d7ce95a08bac8ccd11bc827a9517e6052ba08e9eb436186c0d7296736a04dd58db33b8a3898b1329b36977b91c040f60fa8f3e.ee477148b98b7151cff3efb0cca39d34	\N	\N	\N	active	2024-09-18 15:44:22.669171+02	\N
 72	Robert	1953-09-22	Je m'appelle Robert, un passionné d'histoire locale. Après une carrière dans l'administration, je me consacre à la préservation du patrimoine de ma ville. J'organise des visites guidées bénévoles et je travaille sur un livre retraçant l'histoire de notre région à travers les siècles.	male	https://images.pexels.com/photos/5637526/pexels-photo-5637526.jpeg?auto=compress&cs=tinysrgb&w=600	\N	robert.histoire53@example.com	f6b99e018022bdb4e0a49a1362883213fcf50e82335152fd8a29977e6578ba0dccc8ce9cc150558617b7daab9bdcec2f25c16940c5a2b57264d1eb56dc34bc93.234059f2a4d5e88d44ec36d93ca8a29a	\N	\N	\N	active	2024-09-18 15:44:22.974701+02	\N
-73	Aminata	1958-11-30	Je suis Aminata, une ancienne sage-femme originaire du Sénégal. Aujourd'hui à la retraite, je me consacre à l'accompagnement des jeunes mères dans ma communauté. Je suis également passionnée de couture et je crée des vêtements traditionnels africains que je vends au profit d'associations caritatives.	female	https://img.freepik.com/photos-gratuite/vue-laterale-senior-femme-noire-posant_23-2150247818.jpg?t=st=1726664731~exp=1726668331~hmac=f29188de63fd7244ff597308f2aaa4ea77e79ef46e57b4914ac7d6019dbc896f&w=740	\N	aminata.sage58@example.com	3f2304f0ef353b0b57758f0c574f5f6450f7c610855017a3f32989205706bf1ad1549794256b62a2319d60875d610b3845f01871179898156edab1385480fb63.d1c2d1d33fb44d59c198dcc1eeb6671f	\N	\N	\N	active	2024-09-18 15:44:23.279501+02	\N
+73	Aminata	1958-11-30	Je suis Aminata, une ancienne sage-femme originaire du Sénégal. Aujourd'hui à la retraite, je me consacre à l'accompagnement des jeunes mères dans ma communauté. Je suis également passionnée de couture et je crée des vêtements traditionnels africains que je vends au profit d'associations caritatives.	female	https://img.freepik.com/photos-gratuite/vue-laterale-seniorlove-femme-noire-posant_23-2150247818.jpg?t=st=1726664731~exp=1726668331~hmac=f29188de63fd7244ff597308f2aaa4ea77e79ef46e57b4914ac7d6019dbc896f&w=740	\N	aminata.sage58@example.com	3f2304f0ef353b0b57758f0c574f5f6450f7c610855017a3f32989205706bf1ad1549794256b62a2319d60875d610b3845f01871179898156edab1385480fb63.d1c2d1d33fb44d59c198dcc1eeb6671f	\N	\N	\N	active	2024-09-18 15:44:23.279501+02	\N
 74	Jean-Pierre	1951-05-07	Je m'appelle Jean-Pierre, un ancien ingénieur en aéronautique. Ma passion pour l'aviation ne m'a jamais quitté et je consacre désormais mon temps à construire des modèles réduits d'avions historiques. J'anime également un club d'aéromodélisme pour les jeunes de ma ville.	male	https://images.pexels.com/photos/5647229/pexels-photo-5647229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1	\N	jeanpierre.aviation51@example.com	2ebd350ac07ef2fcdd7ff16837d5cc7da70b07970361762ae68c8842149c4c75ca75eb653e91da4fe2e7c612c7778fda0d7cf30aa154ed13541cfc0b93374b58.8fdd47a42fcf6a2d6ddc5a62ab3dee9c	\N	\N	\N	active	2024-09-18 15:44:23.584688+02	\N
 75	Fatima	1960-02-14	Je suis Fatima, une artiste peintre d'origine marocaine. Après une carrière dans l'enseignement des arts plastiques, je me consacre entièrement à ma passion. Mes œuvres, inspirées de la culture berbère, sont exposées dans plusieurs galeries. J'anime également des ateliers d'art-thérapie pour les personnes âgées.	female	https://img.freepik.com/photos-gratuite/portrait-monochrome-belle-femme-africaine_23-2151436186.jpg?t=st=1726665216~exp=1726668816~hmac=8d6376a45a63076616489dec2744a3e873bcf82a838dfb83b6349a92cc936f77&w=1380	\N	fatima.art60@example.com	ec0758df326a01039a515b423be2ea33de04c8da785f3200a3c4c93a0d55157638178db5de4c07d4d3b73068adc2255a54cc5074c79344656529fd5ce7597253.1dafce25e7b2d1203c9b500564601f25	\N	\N	\N	active	2024-09-18 15:44:23.892472+02	\N
 76	Georges	1949-08-23	Je m'appelle Georges, un ancien chef cuisinier. Ma passion pour la gastronomie ne m'a jamais quitté. Aujourd'hui, je partage mon savoir-faire en donnant des cours de cuisine française traditionnelle. Je suis également bénévole dans une banque alimentaire, où je prépare des repas pour les plus démunis.	male	https://images.pexels.com/photos/1703540/pexels-photo-1703540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1	\N	georges.cuisine49@example.com	3d6639307b44353a5d3939def49095148ab27ec4a7c21a0f18061829dab099e9c79d0ed830537323dfcf3e98551993a816e69c865eded8f6d1b8316345070007.898b5145ec03ecdd694c0fb1c51f487b	\N	\N	\N	active	2024-09-18 15:44:24.198155+02	\N
@@ -445,7 +445,7 @@ COPY public.users (id, name, birth_date, description, gender, picture, picture_i
 
 
 --
--- Data for Name: users_events; Type: TABLE DATA; Schema: public; Owner: senior
+-- Data for Name: users_events; Type: TABLE DATA; Schema: public; Owner: seniorlove
 --
 
 COPY public.users_events (id, user_id, event_id, created_at, updated_at) FROM stdin;
@@ -545,7 +545,7 @@ COPY public.users_events (id, user_id, event_id, created_at, updated_at) FROM st
 
 
 --
--- Data for Name: users_hobbies; Type: TABLE DATA; Schema: public; Owner: senior
+-- Data for Name: users_hobbies; Type: TABLE DATA; Schema: public; Owner: seniorlove
 --
 
 COPY public.users_hobbies (id, user_id, hobby_id, created_at, updated_at) FROM stdin;
@@ -765,7 +765,7 @@ COPY public.users_hobbies (id, user_id, hobby_id, created_at, updated_at) FROM s
 
 
 --
--- Data for Name: users_messages; Type: TABLE DATA; Schema: public; Owner: senior
+-- Data for Name: users_messages; Type: TABLE DATA; Schema: public; Owner: seniorlove
 --
 
 COPY public.users_messages (id, message, sender_id, receiver_id, created_at, updated_at, read) FROM stdin;
@@ -925,63 +925,63 @@ COPY public.users_messages (id, message, sender_id, receiver_id, created_at, upd
 
 
 --
--- Name: administrators_id_seq; Type: SEQUENCE SET; Schema: public; Owner: senior
+-- Name: administrators_id_seq; Type: SEQUENCE SET; Schema: public; Owner: seniorlove
 --
 
 SELECT pg_catalog.setval('public.administrators_id_seq', 1, true);
 
 
 --
--- Name: events_hobbies_id_seq; Type: SEQUENCE SET; Schema: public; Owner: senior
+-- Name: events_hobbies_id_seq; Type: SEQUENCE SET; Schema: public; Owner: seniorlove
 --
 
 SELECT pg_catalog.setval('public.events_hobbies_id_seq', 74, true);
 
 
 --
--- Name: events_id_seq; Type: SEQUENCE SET; Schema: public; Owner: senior
+-- Name: events_id_seq; Type: SEQUENCE SET; Schema: public; Owner: seniorlove
 --
 
 SELECT pg_catalog.setval('public.events_id_seq', 69, true);
 
 
 --
--- Name: hobbies_id_seq; Type: SEQUENCE SET; Schema: public; Owner: senior
+-- Name: hobbies_id_seq; Type: SEQUENCE SET; Schema: public; Owner: seniorlove
 --
 
 SELECT pg_catalog.setval('public.hobbies_id_seq', 12, true);
 
 
 --
--- Name: users_events_id_seq; Type: SEQUENCE SET; Schema: public; Owner: senior
+-- Name: users_events_id_seq; Type: SEQUENCE SET; Schema: public; Owner: seniorlove
 --
 
 SELECT pg_catalog.setval('public.users_events_id_seq', 101, true);
 
 
 --
--- Name: users_hobbies_id_seq; Type: SEQUENCE SET; Schema: public; Owner: senior
+-- Name: users_hobbies_id_seq; Type: SEQUENCE SET; Schema: public; Owner: seniorlove
 --
 
 SELECT pg_catalog.setval('public.users_hobbies_id_seq', 322, true);
 
 
 --
--- Name: users_id_seq; Type: SEQUENCE SET; Schema: public; Owner: senior
+-- Name: users_id_seq; Type: SEQUENCE SET; Schema: public; Owner: seniorlove
 --
 
 SELECT pg_catalog.setval('public.users_id_seq', 87, true);
 
 
 --
--- Name: users_messages_id_seq; Type: SEQUENCE SET; Schema: public; Owner: senior
+-- Name: users_messages_id_seq; Type: SEQUENCE SET; Schema: public; Owner: seniorlove
 --
 
 SELECT pg_catalog.setval('public.users_messages_id_seq', 152, true);
 
 
 --
--- Name: administrators administrators_email_key; Type: CONSTRAINT; Schema: public; Owner: senior
+-- Name: administrators administrators_email_key; Type: CONSTRAINT; Schema: public; Owner: seniorlove
 --
 
 ALTER TABLE ONLY public.administrators
@@ -989,7 +989,7 @@ ALTER TABLE ONLY public.administrators
 
 
 --
--- Name: administrators administrators_pkey; Type: CONSTRAINT; Schema: public; Owner: senior
+-- Name: administrators administrators_pkey; Type: CONSTRAINT; Schema: public; Owner: seniorlove
 --
 
 ALTER TABLE ONLY public.administrators
@@ -997,7 +997,7 @@ ALTER TABLE ONLY public.administrators
 
 
 --
--- Name: events_hobbies events_hobbies_pkey; Type: CONSTRAINT; Schema: public; Owner: senior
+-- Name: events_hobbies events_hobbies_pkey; Type: CONSTRAINT; Schema: public; Owner: seniorlove
 --
 
 ALTER TABLE ONLY public.events_hobbies
@@ -1005,7 +1005,7 @@ ALTER TABLE ONLY public.events_hobbies
 
 
 --
--- Name: events events_pkey; Type: CONSTRAINT; Schema: public; Owner: senior
+-- Name: events events_pkey; Type: CONSTRAINT; Schema: public; Owner: seniorlove
 --
 
 ALTER TABLE ONLY public.events
@@ -1013,7 +1013,7 @@ ALTER TABLE ONLY public.events
 
 
 --
--- Name: hobbies hobbies_pkey; Type: CONSTRAINT; Schema: public; Owner: senior
+-- Name: hobbies hobbies_pkey; Type: CONSTRAINT; Schema: public; Owner: seniorlove
 --
 
 ALTER TABLE ONLY public.hobbies
@@ -1021,7 +1021,7 @@ ALTER TABLE ONLY public.hobbies
 
 
 --
--- Name: users users_email_key; Type: CONSTRAINT; Schema: public; Owner: senior
+-- Name: users users_email_key; Type: CONSTRAINT; Schema: public; Owner: seniorlove
 --
 
 ALTER TABLE ONLY public.users
@@ -1029,7 +1029,7 @@ ALTER TABLE ONLY public.users
 
 
 --
--- Name: users_events users_events_pkey; Type: CONSTRAINT; Schema: public; Owner: senior
+-- Name: users_events users_events_pkey; Type: CONSTRAINT; Schema: public; Owner: seniorlove
 --
 
 ALTER TABLE ONLY public.users_events
@@ -1037,7 +1037,7 @@ ALTER TABLE ONLY public.users_events
 
 
 --
--- Name: users_hobbies users_hobbies_pkey; Type: CONSTRAINT; Schema: public; Owner: senior
+-- Name: users_hobbies users_hobbies_pkey; Type: CONSTRAINT; Schema: public; Owner: seniorlove
 --
 
 ALTER TABLE ONLY public.users_hobbies
@@ -1045,7 +1045,7 @@ ALTER TABLE ONLY public.users_hobbies
 
 
 --
--- Name: users_messages users_messages_pkey; Type: CONSTRAINT; Schema: public; Owner: senior
+-- Name: users_messages users_messages_pkey; Type: CONSTRAINT; Schema: public; Owner: seniorlove
 --
 
 ALTER TABLE ONLY public.users_messages
@@ -1053,7 +1053,7 @@ ALTER TABLE ONLY public.users_messages
 
 
 --
--- Name: users users_pkey; Type: CONSTRAINT; Schema: public; Owner: senior
+-- Name: users users_pkey; Type: CONSTRAINT; Schema: public; Owner: seniorlove
 --
 
 ALTER TABLE ONLY public.users
@@ -1061,7 +1061,7 @@ ALTER TABLE ONLY public.users
 
 
 --
--- Name: events events_admin_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: senior
+-- Name: events events_admin_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: seniorlove
 --
 
 ALTER TABLE ONLY public.events
@@ -1069,7 +1069,7 @@ ALTER TABLE ONLY public.events
 
 
 --
--- Name: events_hobbies events_hobbies_event_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: senior
+-- Name: events_hobbies events_hobbies_event_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: seniorlove
 --
 
 ALTER TABLE ONLY public.events_hobbies
@@ -1077,7 +1077,7 @@ ALTER TABLE ONLY public.events_hobbies
 
 
 --
--- Name: events_hobbies events_hobbies_hobby_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: senior
+-- Name: events_hobbies events_hobbies_hobby_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: seniorlove
 --
 
 ALTER TABLE ONLY public.events_hobbies
@@ -1085,7 +1085,7 @@ ALTER TABLE ONLY public.events_hobbies
 
 
 --
--- Name: users_events users_events_event_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: senior
+-- Name: users_events users_events_event_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: seniorlove
 --
 
 ALTER TABLE ONLY public.users_events
@@ -1093,7 +1093,7 @@ ALTER TABLE ONLY public.users_events
 
 
 --
--- Name: users_events users_events_user_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: senior
+-- Name: users_events users_events_user_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: seniorlove
 --
 
 ALTER TABLE ONLY public.users_events
@@ -1101,7 +1101,7 @@ ALTER TABLE ONLY public.users_events
 
 
 --
--- Name: users_hobbies users_hobbies_hobby_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: senior
+-- Name: users_hobbies users_hobbies_hobby_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: seniorlove
 --
 
 ALTER TABLE ONLY public.users_hobbies
@@ -1109,7 +1109,7 @@ ALTER TABLE ONLY public.users_hobbies
 
 
 --
--- Name: users_hobbies users_hobbies_user_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: senior
+-- Name: users_hobbies users_hobbies_user_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: seniorlove
 --
 
 ALTER TABLE ONLY public.users_hobbies
@@ -1117,7 +1117,7 @@ ALTER TABLE ONLY public.users_hobbies
 
 
 --
--- Name: users_messages users_messages_receiver_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: senior
+-- Name: users_messages users_messages_receiver_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: seniorlove
 --
 
 ALTER TABLE ONLY public.users_messages
@@ -1125,7 +1125,7 @@ ALTER TABLE ONLY public.users_messages
 
 
 --
--- Name: users_messages users_messages_sender_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: senior
+-- Name: users_messages users_messages_sender_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: seniorlove
 --
 
 ALTER TABLE ONLY public.users_messages

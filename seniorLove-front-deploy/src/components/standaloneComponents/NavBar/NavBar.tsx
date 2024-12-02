@@ -25,7 +25,7 @@ export default function NavBarV1() {
             <Link
               to={button.to}
               key={button.text}
-              className="text-secondaryPink hover:text-primaryText font-bold py-2 px-3 hidden md:block"
+              className="text-secondaryPink hover:text-white hover:bg-secondaryPink font-bold py-2 px-3 hidden md:block rounded-full bg-[#ebebea]"
             >
               {button.text}
             </Link>

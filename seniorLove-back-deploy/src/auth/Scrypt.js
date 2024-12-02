@@ -30,6 +30,7 @@ export class Scrypt {
     // a minimum block size of 8 (1024 bytes), and a parallelization parameter of 1"
     // That works out to 134220800, around 134MB.
     const clearPasswordBuffer = scryptSync(plainTextpassword, salt, 64, {
+      // longueur du calcul
       N: 131072,
       maxmem: 134220800,
     });
