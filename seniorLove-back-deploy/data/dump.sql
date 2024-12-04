@@ -275,7 +275,7 @@ ALTER TABLE public.users_messages ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTI
 --
 
 COPY public.administrators (id, name, email, password, created_at, updated_at) FROM stdin;
-1	admin	admin1@seniorlovelove.com	f7830c2711df2a75cfa995c0cc48844ced089a68083122ebdbd1b3f03cce103c809a9b5fea23f97fc7fa2aa60bd039cfb957aece3cf43d07a453eecc16564ed2.f9d7ca21ceed12cb867af3b5fadd5f5e	2024-09-18 15:44:27.253182+02	\N
+1	admin	admin1@seniorlove.com	f7830c2711df2a75cfa995c0cc48844ced089a68083122ebdbd1b3f03cce103c809a9b5fea23f97fc7fa2aa60bd039cfb957aece3cf43d07a453eecc16564ed2.f9d7ca21ceed12cb867af3b5fadd5f5e	2024-09-18 15:44:27.253182+02	\N
 \.
 
 
