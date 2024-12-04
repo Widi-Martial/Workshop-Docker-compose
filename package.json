@@ -1,0 +1,12 @@
+{
+    "name": "seniorlove",
+    "version": "1.0.0",
+    "scripts": {
+        "start:back": "cd seniorLove-back-deploy && pnpm dev",
+        "start:front": "cd seniorLove-front-deploy && pnpm dev",
+        "start": "concurrently \"pnpm start:back\" \"pnpm start:front\""
+    },
+    "devDependencies": {
+        "concurrently": "^9.1.0"
+    }
+}
