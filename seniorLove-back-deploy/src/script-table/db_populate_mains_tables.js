@@ -3,7 +3,7 @@ import fs from 'fs';
 
 async function populateTables() {
   const entireFile = fs
-    .readFileSync('../../data/populate_tables.sql')
+    .readFileSync('./data/populate_mains_tables.sql')
     .toString();
 
   for (let query of entireFile.split(';')) {

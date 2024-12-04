@@ -10,8 +10,9 @@
     "test": "cross-env NODE_ENV=test NODE_OPTIONS=--experimental-vm-modules jest --testPathPattern=unit.test",
     "db:restore":"node src/script-table/db_restore_database.js",
     "db:create": "node src/script-table/db_create_tables.js",
+    "db:adminpop":"node src/script-table/db_populate_admin.js",
     "db:populate": "node src/script-table/db_populate_mains_tables.js",
-    "db:init": "pnpm run db:create && pnpm run  db_populate"
+    "db:init": "pnpm run db:create && pnpm run db:adminpop && pnpm run db:populate"
   },
   "keywords": [],
   "author": "Widi MARTIAL",

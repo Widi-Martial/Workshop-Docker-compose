@@ -1,17 +1,11 @@
 import 'dotenv/config';
-import { pgClient } from './pgClient.js';
-import fs from 'fs';
+import { execSync } from 'child_process';
 
-async function restoreDataBase() {
-  const dumpFile = fs.readFileSync('../../data/dump.sql').toString();
-
-  for (let query of dumpFile.split(';')) {
-    query += ';';
-    await pgClient.query(query);
-  }
+try {
+  execSync(`psql ${process.env.DB_NAME} < ./data/dump.sql`, {
+    encoding: 'utf-8',
+  });
+  console.log('Database successfully restored');
+} catch (error) {
+  console.error(error);
 }
-
-await pgClient.connect();
-
-console.log('===> Restore Database...');
-await restoreDataBase();
