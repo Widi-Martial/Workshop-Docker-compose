@@ -3,9 +3,9 @@ import * as userController from '../controllers/userController.js';
 import * as messageController from '../controllers/messageController.js';
 import { controllerWrapper as cw } from '../middlewares/controllerWrapper.js';
 import { checkLoggedIn } from '../middlewares/checkLoggedIn.js';
-
 import multer from 'multer';
 import { userPhotoStorage } from '../cloudinary/index.js';
+
 const uploadUserPhoto = multer({ storage: userPhotoStorage });
 
 export const privateRouter = Router();
